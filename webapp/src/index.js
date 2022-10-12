@@ -6,7 +6,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const App = () => {
   const [sesion, cambiarSesion] = useState(true);
-  const [contador, setContador] = useState(0);
+  
 
   return (
     <>
@@ -15,9 +15,7 @@ const App = () => {
           <h1>contador {contador}</h1>
           <Alumno />
           <button onClick={() => cambiarSesion(false)}>Cerrar sesion</button>
-          <button onClick={() => setContador(contador+1)}>Sumar</button>
-          <button onClick={() => setContador(contador-1)}>restar</button>
-          <button onClick={() => setContador(contador*2)}>Mul 2</button>
+     
         </>
       ) : (
         <>
