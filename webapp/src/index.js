@@ -12,7 +12,6 @@ const App = () => {
     <>
       {sesion === true ? (
         <>
-          <h1>contador {contador}</h1>
           <Alumno />
           <button onClick={() => cambiarSesion(false)}>Cerrar sesion</button>
      
